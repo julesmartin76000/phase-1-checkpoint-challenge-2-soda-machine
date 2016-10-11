@@ -12,18 +12,13 @@ class SodaMachine
   end
 
   def find_soda(soda_brand)
-    # @sodas.each do |soda|
-    #   if list[:soda_brand] = soda
-    #   return soda
-    #   else nil
-    #   end
-    # end
-    index = 0
-    while index < @sodas.count
-    list[:soda_brand] = @sodas[index]
-    return @sodas[index]
-    index += 1
-  end
+    @sodas.each do |soda|
+      if soda.brand == soda_brand
+      return soda
+      else
+      end
+    end
+    nil
   end
 
   def sell(soda_brand)
